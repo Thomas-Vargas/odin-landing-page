@@ -34,6 +34,10 @@ h3 {
     padding-top: 40px;
 }
 
+h4 {
+    font-size: 24px;
+}
+
 a {
     text-decoration: none;
 }
@@ -46,6 +50,7 @@ a {
     display: flex;
 }
 
+/* Nav bar */
 .container {
     justify-content: space-between;
     align-items: center;
@@ -66,6 +71,8 @@ a {
 .links a:hover {
     border-bottom: 1px solid var(--hero-secondary-text);
 }
+
+/* Hero section */
 
 .hero {
     margin-top: 120px;
@@ -97,12 +104,15 @@ a {
 .sign-up {
     margin-top: 20px;
     background-color: var(--button);
-    color: var();
+    color: var(--hero-main-text);
+    font-weight:bold;
     font-size: 18px;
     padding: 8px 30px;
     border-radius: 8px;
     border: none;
 }
+
+/* Information section */
 
 .information {
     background-color: var(--hero-main-text);
@@ -144,12 +154,15 @@ a {
     text-align: center;
 }
 
+/* Quote section */
+
 .quote {
     height: 400px;
     background-color: var(--hero-secondary-text);
     margin: 0px 240px;
     justify-content: center;
     align-items: center;
+    flex-flow: column wrap;
 }
 
 .quote-wrapper {
@@ -161,3 +174,48 @@ a {
     color: var(--dark-bg);
 }
 
+.quote .citation {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 40px;
+    align-self: flex-end;
+}
+
+/* Call to action */
+
+.call-to-action {
+    background-color: var(--hero-main-text);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cta-wrapper {
+    margin: 0px 200px;
+    background-color: var(--button);
+    padding: 50px 140px;
+    border-radius: 8px;
+    color: var(--hero-main-text);
+}
+
+.cta p {
+    color: var(--hero-secondary-text);
+}
+
+.cta-btn {
+    background-color: var(--button);
+    color: var(--hero-main-text);
+    font-weight:bold;
+    font-size: 18px;
+    padding: 0px 30px;
+    border-radius: 8px;
+    border: 2px solid var(--hero-main-text);
+    margin-left: 100px;
+}
+
+/* Footer */
+.footer-txt{
+    font-size: 18px;
+    color: var(--hero-secondary-text);
+    text-align: center;
+    padding: 30px 0px;
+}
